@@ -8,6 +8,12 @@ Pytorch implementation for "Learning Image Demoireing from Unpaired Real Data".
 - pytorch 1.9.0
 - torchvision 0.11.3
 
+## Trained model
+
+Trained moire generation network is [here](https://drive.google.com/drive/folders/1UKPC39fYCiRfq4MBxaqXPSYaCWEZljRt?usp=sharing)
+
+Trained demoire network is [here](https://drive.google.com/drive/folders/1Ce_lwVUVZmF7a7L9Xb9VnWqcD-t6_x6A?usp=sharing)
+
 ## Taining from from scratch
 
 ### 1, data preparation
@@ -64,7 +70,7 @@ We suggest the trained moire generation model of each class can be organized as 
       fhdmi_fake_class4_384/model.pth
 ```
 
-### 3, demoire network training
+### 3, demoire network training 
 
 Before demoire network training, we should obtain the threshold of the adaptive noise.
 Run:
@@ -87,3 +93,5 @@ Finally, we can run the script in './run/' to training the demoire network.
 run/mbcnn.sh
 ```
 Also, please set the data path in these .sh file. 
+
+
